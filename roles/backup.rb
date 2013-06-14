@@ -2,7 +2,7 @@ name "backup"
 description "RapidFTR backup server, with CouchDB, Solr, and Passenger-via-Nginx installed. Replicates data from a main server."
 run_list(
   "recipe[apt]",
-  "recipe[build-essential]",
+  "recipe[dev-packages]",
   "recipe[erlang]",
   "recipe[couchdb]",
   "recipe[git]",

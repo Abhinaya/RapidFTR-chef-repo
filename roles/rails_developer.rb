@@ -6,7 +6,7 @@ name "rails_developer"
 description "RapidFTR Rails dev machine."
 run_list(
   "recipe[apt]",
-  "recipe[build-essential]",
+  "recipe[dev-packages]",
   "recipe[erlang]",
   "recipe[couchdb]",
   "recipe[git]",

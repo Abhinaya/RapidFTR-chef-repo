@@ -19,7 +19,7 @@
 
 case node[:platform]
 when "ubuntu","debian"
-  %w{build-essential binutils-doc}.each do |pkg|
+  %w{build-essential binutils-doc libxml2-dev libxslt1-dev git openjdk-7-jdk imagemagick openssh-server zlib1g-dev}.each do |pkg|
     package pkg do
       action :install
     end
